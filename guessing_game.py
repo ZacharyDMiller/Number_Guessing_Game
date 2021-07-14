@@ -20,6 +20,7 @@ def attempt(random_num):
         else:
             break
     print("\nYou guessed correctly! The number was {}, and it took you {} guesses.".format(random_num, guess_count))
+    print("The game is complete. Thanks for playing!")
 
 
 def start_game():
