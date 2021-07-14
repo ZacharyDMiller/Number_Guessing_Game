@@ -1,12 +1,9 @@
 import random
 
-INTRO_PRINT_LINE = "____________________________"
-
 
 def attempt(random_num):
     guess_count = 0
     guess = 0
-    print(random_num)
     while guess != random_num:
         try:
             guess = int(input("Enter a guess:  "))
@@ -22,11 +19,11 @@ def attempt(random_num):
             continue
         else:
             break
-    print("\nYou guessed correctly! The number was {}, and it took you {} guesses".format(random_num, guess_count))
+    print("\nYou guessed correctly! The number was {}, and it took you {} guesses.".format(random_num, guess_count))
 
 
 def start_game():
-    print("\nWelcome to my guessing game!")
+    print("Welcome to my guessing game!")
     random_num = random.randint(1, 10)
     attempt(random_num)
 
